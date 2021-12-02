@@ -5,25 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
-
-<h1>ROOM </h1> 
-<div class="card" style="width: 18rem;">
-    <img src="image.jpg" class="card-img-top" alt="tipe kamar">
-    <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    <li class="harga"><a href="#">700.000</a>
-</div>
-<div class="card" style="width: 18rem;">
-    <img src="image1.jpg" class="card-img-top" alt="tipe kamar">
-    <div class="card-body">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-    <li class="harga"><a href="#">1.000.000</a>
-</div>
-
-<!-- STYLES -->
+    <!-- STYLES -->
 
 <style {csp-style-nonce}> 
 h1{
@@ -35,7 +17,7 @@ h1{
     font-weight: bold;
     text-align: center;
     padding-top:15px;
-    padding-bottom:5px
+    padding-bottom:5px;
 }
 li {
     display: inline-block;
@@ -52,7 +34,30 @@ li {
 		li.harga a:hover a:focus {
 			background-color: rgba(221, 72, 20, .2);
 			color: rgba(221, 72, 20, 1);
+        }
     
+    </style>
+</head>
+<body>
+<h1>ROOM </h1> 
+<div class="card" style="width: 18rem;">
+    <img src="<?= base_url('assets/image.jpg'); ?> "class="card-img-top" alt="tipe kamar">
+    <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <li class="harga"><a href="#">700.000</a>
+</div>
+<div class="card" style="width: 18rem;">
+    <img src="<?= base_url('assets/image1.jpg'); ?>  "class="card-img-top" alt="tipe kamar">
+    <div class="card-body">
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    </div>
+    <li class="harga"><a href="#">1.000.000</a>
+</div>
+</body>
+
+
+
 
     
 
